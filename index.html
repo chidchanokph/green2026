@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>เช็คชื่อสีเขียว · TSS Sport Game 2026</title>
+<meta name="theme-color" content="#FAF7F1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="สีเขียว">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" type="image/png" href="icon-32.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://script.google.com">
+<link rel="preconnect" href="https://script.googleusercontent.com">
+<style>
+  html,body{margin:0;height:100%;background:#FAF7F1;overflow:hidden}
+  iframe{position:fixed;left:0;right:0;bottom:0;top:env(safe-area-inset-top,0);width:100%;height:calc(100% - env(safe-area-inset-top,0px));border:0;display:block;background:#FAF7F1}
+  #splash{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:#FAF7F1;z-index:2;transition:opacity .3s;
+          font-family:"Sarabun","Noto Sans Thai","Leelawadee UI","Thonburi",system-ui,sans-serif;color:#1F6B55}
+  #splash img{width:96px;height:96px;border-radius:22px;box-shadow:0 8px 24px rgba(31,107,85,.25)}
+  #splash .bar{width:120px;height:4px;border-radius:4px;background:#DDF2E6;overflow:hidden}
+  #splash .bar i{display:block;width:40%;height:100%;background:#1F6B55;border-radius:4px;animation:mv 1s ease-in-out infinite}
+  @keyframes mv{0%{transform:translateX(-100%)}100%{transform:translateX(260%)}}
+  #splash.done{opacity:0;pointer-events:none}
+</style>
+</head>
+<body>
+<div id="splash"><img src="icon-180.png" alt=""><b>ทีมสีเขียว</b><div class="bar"><i></i></div></div>
+<iframe id="app" src="https://script.google.com/macros/s/AKfycbxIfCJxe80d_8YKGMCv81R8xM--DMFRk__WUFrcJSYtdPnOghUQdpGAZhIsbFXIzm1VdA/exec" title="ระบบเช็คชื่อสีเขียว" allow="clipboard-write"></iframe>
+<script>
+  var f = document.getElementById('app'), s = document.getElementById('splash');
+  function hide(){ s.classList.add('done'); }
+  f.addEventListener('load', function(){ setTimeout(hide, 250); });
+  setTimeout(hide, 8000);
+</script>
+</body>
+</html>
